@@ -61,6 +61,7 @@ export default class Note extends React.Component {
           <div className='Note__dates-modified'>
             <p>Modified {date.toDateString()}</p>   
             <span className='Date'>
+              
             </span>
           </div>
         </div>

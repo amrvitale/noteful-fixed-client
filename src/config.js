@@ -1,6 +1,8 @@
 export default {
-    API_ENDPOINT: `https://arcane-castle-16152.herokuapp.com/api`,
+    API_ENDPOINT: `http://localhost:8000/api`,
 
   }
 //
-//http://localhost:9090
+//
+
+//https://arcane-castle-16152.herokuapp.com/api

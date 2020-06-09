@@ -38,6 +38,8 @@ export default class Note extends React.Component {
 
   render() {
     const { name, id, content, date_modified } = this.props 
+    console.log(this.props);
+
     const date = new Date(date_modified);
 
     return (

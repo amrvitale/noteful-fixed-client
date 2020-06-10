@@ -37,10 +37,11 @@ export default class Note extends React.Component {
   }
 
   render() {
-    const { name, id, content, date_modified } = this.props 
-    console.log(this.props);
+    const { name, id, content, modified } = this.props 
+    console.log(modified);
 
-    const date = new Date(date_modified);
+    const date = new Date(modified);
+    console.log(date)
 
     return (
       <div className='Note'>

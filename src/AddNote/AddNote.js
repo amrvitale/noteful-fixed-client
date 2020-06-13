@@ -67,19 +67,19 @@ export default class AddNote extends Component {
             <label htmlFor='note-name-input'>
               Name
             </label>
-            <input type='text' id='note-name-input' name='name' onChange={this.handleChange} />
+            <input type='text' id='note-name-input' name='name' onChange={this.handleChange} required/>
           </div>
           <div className='field'>
             <label htmlFor='note-content-input'>
               Content
             </label>
-            <textarea id='note-content-input' name='content' onChange={this.handleChange} />
+            <textarea id='note-content-input' name='content' onChange={this.handleChange} required />
           </div>
           <div className='field'>
             <label htmlFor='note-folder-select'>
               Folder
             </label>
-            <select id='note-folder-select' name='folder_id' onChange={this.handleChange}>
+            <select id='note-folder-select' name='folder_id' onChange={this.handleChange} required>
               <option value={null}>...</option>
               {folders.map(folder =>
                 <option key={folder.id} value={folder.id}>
